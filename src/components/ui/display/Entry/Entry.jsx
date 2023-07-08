@@ -2,7 +2,7 @@ import styles from "./Entry.module.css";
 
 import createMarkup from "@/utils/create-markup";
 
-function Entry(props) {
+export function Entry(props) {
   const { title, content } = props;
 
   return (
@@ -12,5 +12,3 @@ function Entry(props) {
     </div>
   );
 }
-
-export default Entry;

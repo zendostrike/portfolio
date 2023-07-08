@@ -1,9 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
-import Tabs from "../components/ui/display/Tabs";
-import Tab from "../components/ui/display/Tabs/Tab";
+import { CustomLink, Tab, Tabs } from "@/components";
 
 import styles from "./Layout.module.css";
 
@@ -12,27 +9,19 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Image
-          src="/ceiling-lamp.png"
-          width={150}
-          height={150}
-          alt="lamp"
-        ></Image>
-      </div>
       <div className={styles.layout}>
         <Tabs>
-          <Link href="/">
+          <CustomLink href="/">
             <Tab selected={pathname === "/"}>Home</Tab>
-          </Link>
-          <Link href="/art">
+          </CustomLink>
+{/*           <CustomLink href="/art">
             <Tab selected={pathname === "/art"}>Art</Tab>
-          </Link>
+          </CustomLink>
           <Tab>Software</Tab>
-          <Tab>Games</Tab>
-          <Link href="/blogs">
+          <Tab>Games</Tab> */}
+          <CustomLink href="/blogs">
             <Tab selected={pathname === "/blogs"}>Blog</Tab>
-          </Link>
+          </CustomLink>
         </Tabs>
 
         <main>{children}</main>

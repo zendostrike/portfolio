@@ -1,5 +1,4 @@
-import Entry from "@/components/ui/display/Entry";
-
+import { Entry } from "@/components";
 import getPost from "@/handlers/get-post";
 import getPosts from "@/handlers/get-posts";
 
@@ -33,5 +32,6 @@ export async function getStaticProps(context) {
     props: {
       post: data,
     },
+    revalidate: 60,
   };
 }

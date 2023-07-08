@@ -6,7 +6,7 @@ export default function Home() {
       </p>
 
       <p>
-        👨‍💻 <b>Web developer.</b> 5️⃣ <b>years of experience.</b>
+        👨‍💻 <b>Web developer.</b> 5️⃣ <b>years of building awesome UI interfaces.</b>
       </p>
 
       <p>My main stack is Javascript/Typescript, Node.js.</p>

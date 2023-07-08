@@ -1,6 +1,6 @@
 import styles from "./Tab.module.css";
 
-function Tab(props) {
+export function Tab(props) {
   const { children, selected } = props;
 
   let classnames = styles.tab;
@@ -11,5 +11,3 @@ function Tab(props) {
 
   return <div className={classnames}>{children}</div>;
 }
-
-export default Tab;

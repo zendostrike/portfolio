@@ -1,22 +1,16 @@
-export interface Template {
-  link: string;
-  title: string;
-  location: string;
-  date: string;
-}
-const one: Template = {
+const one = {
   link: "https://www.taringa.net/",
   title: "Taringa!",
   location: "React, React Native Developer - Remote",
   date: "01.03.2021 - Now",
 };
-const two: Template = {
+const two = {
   link: "https://belatrix.globant.com/us-en/",
   title: "Belatrix Software",
   location: "Frontend Developer - Lima, Peru",
   date: "01.09.2019",
 };
-const three: Template = {
+const three = {
   link: "https://stakeholders.com.pe/compromiso-empresarial/rse/startup-%C2%A8aprendiendo%C2%A8-busca-consolidarse-apoyo-wayra-peru/",
   title: "Aprendiendo.la",
   location: "Fullstack Developer - Lima, Peru",

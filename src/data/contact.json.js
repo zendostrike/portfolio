@@ -1,14 +1,9 @@
-export interface Template {
-  link: string;
-  type: string;
-  title: string;
-}
-const one: Template = {
+const one = {
   link: "mailto:gece.ramirez@gmail.com",
   type: "Email",
   title: "gece.ramirez@gmail.com",
 };
-const two: Template = {
+const two = {
   link: "https://www.linkedin.com/in/gian-ramirez/",
   type: "LinkedIn",
   title: "Giancarlo Ramirez",

@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
       </Head>
-      <body>
+      <body className='bg-white dark:bg-black m-auto'>
         <Main />
         <NextScript />
       </body>

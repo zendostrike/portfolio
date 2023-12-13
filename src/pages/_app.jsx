@@ -1,12 +1,10 @@
 import Head from "next/head";
 
-import Layout from "@/layouts/Layout";
-
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <>
       <Head>
         <meta name="referrer" content="no-referrer" />
 
@@ -31,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 
